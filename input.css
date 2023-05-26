@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .w-depoiments_item{
+        @apply w-72 h-56 p-5 bg-white rounded-2xl flex flex-col justify-center items-center gap-4
+    }
+
+    .w-reveal{
+        @apply transition-all transform ease-linear duration-300
+    }
+
+    .w-hidden{
+        @apply opacity-0 blur-sm translate-y-[20%]
+    }
+
+    .w-show{
+        @apply opacity-100 blur-0 translate-y-0
+    }
+}
+
+@layer utilities{    
+    p{
+        font-family: 'Lexend';
+        color: #fff;
+    }
+
+    h1{
+        font-family: 'Lobster';
+        font-size: 32px;
+        color: #fff;
+    }
+    
+    .w-home{
+        height: 100%;
+        background-image: url(src/media/2\ banner\ de\ Wellen.png);
+        background-repeat: no-repeat;
+        background-position-x: 52%;        
+        background-size: 280%;
+        background-color: #000;
+    }
+
+    .w-who-is-wellen{
+        background-image: url(src/media/chocolate-duo-mobile.png);
+        background-repeat: no-repeat;
+        
+    }
+
+    .w-bolos{
+        background-image: url(src/media/Bolos.png);
+        background-position-x: 25%;
+        background-repeat: no-repeat;
+        background-color: #901884;
+
+        display: grid;
+        grid-template-areas: 
+            "text1"
+            "photo" 
+            "text2";
+    }
+
+    .w-text1{
+        grid-area: text1;
+    }
+
+    .w-text2{
+        grid-area: text2;
+    }
+
+    .w-photo{
+        grid-area: photo;
+    }
+
+    .w-brigadeiros{
+        background-image: url(src/media/bg-brigadeiro.png);
+        background-position-x: 20%;
+        background-repeat: no-repeat;
+        background-color: #4D200C;
+
+        display: grid;
+        grid-template-areas: 
+            "text1"
+            "photo" 
+            "text2";
+    }
+
+    .w-depoiments{
+        background-image: url(src/media/depoimentos-bg.png); 
+        background-repeat: no-repeat;    
+        background-size: 500%;
+    }
+
+    .w-cta{
+        background-image: url(src/media/Banner\ final\ de\ Wellen\ 1-min.png);
+        background-position-x: 53%;
+        background-repeat: no-repeat;
+        background-color: #000;
+    }
+
+    @media (min-width: 640px) {
+        .w-home{
+            background-size: 250%;
+            background-repeat: no-repeat;
+        }              
+        
+        .w-bolos{
+            background-position-x: 10%;
+        }
+
+        .w-brigadeiros{
+            background-position-x: 0%;
+        }
+
+        .w-who-is-wellen{
+            background-size: cover;
+        }
+    }
+
+    @media (min-width: 1024px){
+        .w-home{
+            background-size: cover;
+            height: 100vh;
+        }
+
+        .w-bolos{
+            background-size: cover;
+            grid-template-areas: 
+                ". . text1"
+                ". . photo" 
+                "text2 . photo";
+        }
+
+        .w-brigadeiros{
+            background-size: cover;
+            grid-template-areas: 
+                ". . text1"
+                "photo . text2" 
+                "photo . text2";
+        }
+
+        .w-depoiments{
+            background-size: cover;
+        }
+
+        .w-cta{
+            background-size: cover;
+            height: 120vh;
+        }
+    }
+}
