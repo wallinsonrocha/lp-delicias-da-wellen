@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "tailwindcss -i input.css -o src/assets/css/output.css --watch",
+    "watch": "tailwindcss -i src/assets/css/input.css -o src/assets/css/output.css --watch",
     "purgecss": "npx purgecss --config purgecss.config.js --output src/assets/css"
   },
   "keywords": [],

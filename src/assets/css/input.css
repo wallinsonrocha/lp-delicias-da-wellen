@@ -34,7 +34,7 @@
     
     .w-home{
         height: 100%;
-        background-image: url("/src/assets/img/banner-wellen-home.webp");
+        background-image: url(../img/banner-wellen-home.webp);
         background-repeat: no-repeat;
         background-position-x: 52%;        
         background-size: 280%;
@@ -42,13 +42,13 @@
     }
 
     .w-who-is-wellen{
-        background-image: url("/src/assets/img/chocolate-duo-mobile.png");
+        background-image: url("../img/chocolate-duo-mobile.png");
         background-repeat: no-repeat;
         
     }
 
     .w-bolos{
-        background-image: url(/src/assets/img/Bolos.png);
+        background-image: url(../img/Bolos.png);
         background-position-x: 25%;
         background-repeat: no-repeat;
         background-color: #901884;
@@ -73,7 +73,7 @@
     }
 
     .w-brigadeiros{
-        background-image: url(/src/assets/img/bg-brigadeiro.png);
+        background-image: url(../img/bg-brigadeiro.png);
         background-position-x: 20%;
         background-repeat: no-repeat;
         background-color: #4D200C;
@@ -86,13 +86,13 @@
     }
 
     .w-depoiments{
-        background-image: url(/src/assets/img/depoimentos-bg.png); 
+        background-image: url(../img/depoimentos-bg.png); 
         background-repeat: no-repeat;    
         background-size: 500%;
     }
 
     .w-cta{
-        background-image: url(/src/assets/img/Banner\ final\ de\ Wellen\ 1-min.png);
+        background-image: url(../img/Banner\ final\ de\ Wellen\ 1-min.png);
         background-position-x: 53%;
         background-repeat: no-repeat;
         background-color: #000;
